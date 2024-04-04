@@ -18,7 +18,7 @@ public:
     }
     void avanzar() 
     {
-        random_device rd;
+        random_device rd; //Metodo de generacion aleatoria
         mt19937 gen(rd());
         uniform_int_distribution<int> dis(1, 6);
         int distanciaAvance = dis(gen);
